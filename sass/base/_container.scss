@@ -1,0 +1,11 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}

@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: $fontPrimary;
+  letter-spacing: 0.03em;
+  background-color: var(--text-light-color);
+  color: var(--text-color);
+}
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.link {
+  display: inline-block;
+  text-decoration: none;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: inherit;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,21 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+.feature__item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
+.feature__icon {
+  @extend %align;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 1.7;
+}

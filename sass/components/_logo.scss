@@ -1,0 +1,22 @@
+.logo-header,
+.logo-footer {
+  font-family: $fontLogo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-first-part {
+  color: var(--accent-color);
+}
+.logo-header {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--darkest-color);
+}
+.logo-footer {
+  margin-bottom: 20px;
+  background-color: var(--dark-background-color);
+  color: var(--text-light-color);
+}

@@ -1,0 +1,11 @@
+%flexgap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+%align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
