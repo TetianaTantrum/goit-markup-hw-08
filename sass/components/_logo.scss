@@ -2,8 +2,8 @@
 .logo-footer {
   font-family: $fontLogo;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
 }
 .logo-first-part {
@@ -11,12 +11,12 @@
 }
 .logo-header {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--darkest-color);
 }
-.logo-footer {
-  margin-bottom: 20px;
-  background-color: var(--dark-background-color);
-  color: var(--text-light-color);
-}
+// .logo-footer {
+//   margin-bottom: 20px;
+//   background-color: var(--dark-background-color);
+//   color: var(--text-light-color);
+// }
