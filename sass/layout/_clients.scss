@@ -2,7 +2,7 @@
   display: flex;
   gap: 30px;
 }
-.clients-link {
+.clients__link {
   @extend %align;
   text-align: center;
   padding: 0;
@@ -20,10 +20,10 @@
   }
 }
 
-.clients-item {
+.clients__item {
   flex-basis: calc((100% - 5 * 30px) / 6);
 }
-.icon-clients {
+.clients__icon {
   fill: currentColor;
   cursor: pointer;
 }

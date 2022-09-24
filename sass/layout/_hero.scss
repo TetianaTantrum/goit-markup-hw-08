@@ -1,4 +1,4 @@
-.hero-section {
+.hero__section {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -17,22 +17,22 @@
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
   padding: 0;
   margin-bottom: 30px;
   font-family: inherit;
-    @include font(900, 44px, 60px, center, 0.06em);
+  @include font(900, 44px, 60px, center, 0.06em);
   text-transform: uppercase;
   color: var(--text-light-color);
 }
-.hero-btn {
+.hero__btn {
   align-items: center;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
   min-width: 216px;
   font-family: $fontPrimary;
-    @include font(700, 16px, 30px, center, 0.06em);
+  @include font(700, 16px, 30px, center, 0.06em);
   background-color: var(--accent-color);
   color: var(--text-light-color);
 

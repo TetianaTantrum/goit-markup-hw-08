@@ -8,25 +8,27 @@
   text-decoration: none;
   background-color: #2f303a;
 }
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-location {
+.address__location {
   text-decoration: none;
   color: var(--text-light-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-  color: var(--accent-color);
-}}
-.address-contacts {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.address__contacts {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus {
-  color: var(--accent-color);
-}}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
 .footer-left-part {
   display: flex;
   align-items: baseline;

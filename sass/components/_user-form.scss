@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
 }
-.form-text {
+.form__text {
   margin-bottom: 12px;
   font-family: inherit;
   @include font(700, 20px, 23px, center);
   color: var(--title-color);
 }
-.form-wrapper {
+.form__wrapper {
   position: relative;
   display: block;
   margin-bottom: 10px;
 }
-.form-icon {
+.form__icon {
   position: absolute;
   display: block;
   top: 50%;
@@ -22,18 +22,18 @@
   fill: currentColor;
   color: var(--darkest-color);
 
-  .form-input:focus + & {
+  .form__input:focus + & {
     color: var(--accent-color);
   }
 }
-.form-label {
+.form__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.form-input {
+.form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -51,7 +51,7 @@
   }
 }
 
-.form-message {
+.form__message {
   width: 100%;
   height: 120px;
   resize: none;
@@ -70,31 +70,31 @@
     border-color: var(--accent-color);
   }
 }
-.form-check {
+.form__check {
   position: absolute;
   appearance: none;
 }
 
-.form-own-check {
+.form__own-check {
   border: 2px solid var(--title-color);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
   margin-left: 14px;
-  .form-check:focus + & {
+  .form__check:focus + & {
     border-color: var(--accent-color);
   }
-  .form-check:checked + & {
+  .form__check:checked + & {
     background-color: var(--accent-color);
     background-size: contain;
     background-origin: border-box;
     border-color: var(--accent-color);
   }
-  .form-check:checked + & {
+  .form__check:checked + & {
     background-color: var(--accent-color);
   }
 }
-.form-own-check-icon {
+.form__own-check-icon {
   display: none;
   width: 16px;
   height: 15px;
@@ -102,11 +102,11 @@
   cursor: pointer;
   fill: currentColor;
   color: var(--text-light-color);
-  .form-check:checked + .form-own-check & {
+  .form__check:checked + .form__own-check & {
     display: block;
   }
 }
-.form-policy {
+.form__policy {
   position: relative;
   display: flex;
   align-items: center;
@@ -115,14 +115,14 @@
   line-height: 1.71;
   color: var(--text-color);
 }
-.form-policy-link {
+.form__policy-link {
   color: var(--accent-color);
   &:hover,
   &:focus {
     text-decoration: none;
   }
 }
-.form-btn {
+.form__btn {
   margin-left: auto;
   margin-right: auto;
   display: flex;
