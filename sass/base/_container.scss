@@ -1,8 +1,12 @@
 .container {
-  background-color: lightcyan;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+}
+.mobile-menu__container {
+  position: relative;
+  max-width: 450px;
+  padding: 48px 40px;
 }
 @media screen and (min-width: 480px) {
   .container {

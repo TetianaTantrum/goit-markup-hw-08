@@ -1,3 +1,34 @@
+.contacts {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact__item {
+    flex-basis: calc((100% - 1 * 10px) / 2);
+  }
+  .contact__link {
+    display: flex;
+    align-items: center;
+    @include font(500, 12px, 14px, start, 0.02em);
+    color: var(--text-color);
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .contact__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
 // .contacts {
 //   display: flex;
 //   margin-left: auto;

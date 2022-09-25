@@ -55,9 +55,72 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu__btn" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="close-btn" data-menu-close>
+              <svg class="mobile-menu__btn" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu__wrapper">
+              <div class="mobile-menu__thumb">
+                <ul class="mobile-menu__pages-list list">
+                  <li class="mobile-menu__pages-item">
+                    <a
+                      class="mobile-menu__pages-link mobile-menu__pages-link--current"
+                      href="./index.html"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="mobile-menu__pages-item">
+                    <a class="mobile-menu__pages-link" href="./portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="mobile-menu__pages-item">
+                    <a class="mobile-menu__pages-link" href="">Контакти</a>
+                  </li>
+                </ul>
+                <ul class="mobile-menu__contacts-list list">
+                  <li class="mobile-menu__contacts-item">
+                    <a
+                      class="mobile-menu__contacts-link mobile-menu__contacts-link--current"
+                      href="tel:+380961111111"
+                      >+380961111111</a
+                    >
+                  </li>
+                  <li class="mobile-menu__contacts-item">
+                    <a
+                      class="mobile-menu__contacts-link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <ul class="mobile-menu__socials-list list">
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                  <a class="mobile-menu__socials-link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-    <main>
+    <!-- <main>
       <section class="hero__section centered">
         <div class="container">
           <h1 class="hero__title">
@@ -402,8 +465,8 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-left-part">
           <div>
@@ -488,8 +551,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
           <svg width="18" height="18">
@@ -557,7 +620,8 @@
           <button class="form__btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

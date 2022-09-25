@@ -1,20 +1,4 @@
-.menu {
-  display: none;
-}
-.contacts {
-  display: none;
-}
-.menu__btn {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  line-height: 0;
-  color: var(--darkest-color);
-  fill: currentColor;
-  &:hover {
-    color: var(--accent-color);
-  }
-}
+
 .header-nav {
   display: flex;
   align-items: center;
