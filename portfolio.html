@@ -124,26 +124,26 @@
         </div>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="section">
         <div class="container">
-          <h1 class="page-title visually-hidden">Проекти</h1>
+          <h1 class="page__title visually-hidden">Проекти</h1>
           <ul class="filter__list list">
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn filter__btn_active">
                 Все
               </button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Веб-сайти</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Додатки</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Дизайн</button>
             </li>
-            <li class="filter-item">
+            <li class="filter__item">
               <button type="button" class="filter__btn">Маркетинг</button>
             </li>
           </ul>
@@ -151,12 +151,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project1.jpg"
-                    alt="Веб-сайт"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project1-desk.webp    1x,
+                        ./images/project1-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project1-desk.jpg    1x,
+                        ./images/project1-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project1-tab.webp    1x,
+                        ./images/project1-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project1-tab.jpg    1x,
+                        ./images/project1-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project1.webp    1x,
+                        ./images/project1@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project1.jpg    1x,
+                        ./images/project1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project1.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -175,12 +224,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project2.jpg"
-                    alt="Два баскетболісти"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project2-desk.webp    1x,
+                        ./images/project2-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project2-desk.jpg    1x,
+                        ./images/project2-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project2-tab.webp    1x,
+                        ./images/project2-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project2-tab.jpg    1x,
+                        ./images/project2-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project2.webp    1x,
+                        ./images/project2@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project2.jpg    1x,
+                        ./images/project2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project2.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -201,12 +299,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project3.jpg"
-                    alt="Назва ресторану з морепродуктами"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project3-desk.webp    1x,
+                        ./images/project3-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project3-desk.jpg    1x,
+                        ./images/project3-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project3-tab.webp    1x,
+                        ./images/project3-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project3-tab.jpg    1x,
+                        ./images/project3-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project3.webp    1x,
+                        ./images/project3@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project3.jpg    1x,
+                        ./images/project3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project3.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -227,12 +374,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project4.jpg"
-                    alt="Навушники"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project4-desk.webp    1x,
+                        ./images/project4-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project4-desk.jpg    1x,
+                        ./images/project4-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project4-tab.webp    1x,
+                        ./images/project4-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project4-tab.jpg    1x,
+                        ./images/project4-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project4.webp    1x,
+                        ./images/project4@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project4.jpg    1x,
+                        ./images/project4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project4.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -253,12 +449,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project5.jpg"
-                    alt="Дві коробки"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project5-desk.webp    1x,
+                        ./images/project5-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project5-desk.jpg    1x,
+                        ./images/project5-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project5-tab.webp    1x,
+                        ./images/project5-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project5-tab.jpg    1x,
+                        ./images/project5-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project5.webp    1x,
+                        ./images/project5@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project5.jpg    1x,
+                        ./images/project5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project5.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -279,12 +524,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project6.jpg"
-                    alt="Монітор"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project6-desk.webp    1x,
+                        ./images/project6-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project6-desk.jpg    1x,
+                        ./images/project6-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project6-tab.webp    1x,
+                        ./images/project6-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project6-tab.jpg    1x,
+                        ./images/project6-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project6.webp    1x,
+                        ./images/project6@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project6.jpg    1x,
+                        ./images/project6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project6.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -305,12 +599,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project7.jpg"
-                    alt="Розгорнена книга"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project7-desk.webp    1x,
+                        ./images/project7-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project7-desk.jpg    1x,
+                        ./images/project7-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project7-tab.webp    1x,
+                        ./images/project7-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project7-tab.jpg    1x,
+                        ./images/project7-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project7.webp    1x,
+                        ./images/project7@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project7.jpg    1x,
+                        ./images/project7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project7.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -331,12 +674,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project8.jpg"
-                    alt="Лейбл"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project8-desk.webp    1x,
+                        ./images/project8-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project8-desk.jpg    1x,
+                        ./images/project8-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project8-tab.webp    1x,
+                        ./images/project8-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project8-tab.jpg    1x,
+                        ./images/project8-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project8.webp    1x,
+                        ./images/project8@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project8.jpg    1x,
+                        ./images/project8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project8.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -357,12 +749,61 @@
             <li class="project-item">
               <a href="" class="project-card">
                 <div class="project-overlay">
-                  <img
-                    src="./images/Project9.jpg"
-                    alt="Друкують на ноутбуці"
-                    width="370px"
-                    height="294px"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project9-desk.webp    1x,
+                        ./images/project9-desk@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project9-desk.jpg    1x,
+                        ./images/project9-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project9-tab.webp    1x,
+                        ./images/project9-tab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project9-tab.jpg    1x,
+                        ./images/project9-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/project9.webp    1x,
+                        ./images/project9@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/project9.jpg    1x,
+                        ./images/project9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/project9.jpg"
+                      alt="retina picture"
+                      class="team__img"
+                    />
+                  </picture>
                   <div class="project-thumb">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -381,7 +822,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- <footer class="footer">
       <div class="container">
         <div class="footer-left-part">

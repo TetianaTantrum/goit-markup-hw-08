@@ -1,11 +1,8 @@
 .projects {
-  @extend %flexgap;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
-
-.project-item {
-  flex-basis: calc((100% - 2 * 30px) / 3);
-}
-
 .project-card {
   position: relative;
   display: block;
@@ -20,6 +17,7 @@
 .project-overlay {
   position: relative;
   overflow: hidden;
+  width: auto;
 }
 .project-thumb {
   position: absolute;
@@ -51,11 +49,34 @@
 }
 .project-title {
   margin-bottom: 4px;
-    @include font(700, 18px, 36px, start, 0.06em);
+  @include font(700, 18px, 36px, start, 0.06em);
   color: var(--title-color);
 }
 .project-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .project-item {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .project-item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 }
