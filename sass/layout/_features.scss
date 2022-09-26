@@ -1,7 +1,8 @@
 .features {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
 }
 .feature__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
@@ -18,4 +19,17 @@
   margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    flex-direction: row;
+  }
+  .feature__item {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
 }

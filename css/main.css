@@ -114,9 +114,7 @@ ul ol {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -195,6 +193,12 @@ ul ol {
     padding-bottom: 25px;
   }
 }
+.logo-footer {
+  margin-bottom: 20px;
+  background-color: var(--dark-background-color);
+  color: var(--text-light-color);
+}
+
 .menu {
   display: none;
 }
@@ -526,10 +530,40 @@ ul ol {
 
 .footer-left-part {
   display: flex;
-  align-items: baseline;
-  gap: 70px;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
 }
 
+.footer__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-left-part {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-left-part {
+    gap: 70px;
+  }
+  .footer__container {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+  .footer-left-part {
+    text-align: start;
+  }
+}
 .socials__list {
   display: flex;
   gap: 10px;
@@ -554,11 +588,14 @@ ul ol {
 
 .sign-up__wrapper {
   display: flex;
-  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .sign-up__input {
-  width: 358px;
+  max-width: 450px;
+  min-width: 400px;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -588,6 +625,7 @@ ul ol {
   padding: 10px 28px;
   border: 0;
   min-width: 150px;
+  max-width: fit-content;
   font-family: inherit;
   font-style: normal;
   color: var(--text-light-color);
@@ -601,6 +639,24 @@ ul ol {
   background-color: var(--accent-hover-color);
 }
 
+@media screen and (min-width: 768px) {
+  .sign-up__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up__input {
+    width: 358px;
+  }
+  .sign-up__wrapper {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .sign-up__form {
+    text-align: start;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -811,23 +867,48 @@ ul ol {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background1.jpg);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--dark-background-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-mob.jpg");
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero__section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-mob@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-tab.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero__section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-tab@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-desk.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero__section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-desk@2x.jpg");
+  }
+}
 .hero__title {
   padding: 0;
   margin-bottom: 30px;
   font-family: inherit;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -855,10 +936,17 @@ ul ol {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
 .features {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .feature__item {
@@ -879,6 +967,24 @@ ul ol {
   line-height: 1.7;
 }
 
+@media screen and (min-width: 768px) {
+  .features {
+    flex-direction: row;
+  }
+  .feature__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .occupation__section {
+    display: none;
+  }
+}
 .section.occupation__section {
   padding-top: 0;
 }
@@ -1027,8 +1133,10 @@ ul ol {
 
 .project-card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  height: 100%;
 }
 .project-card:hover, .project-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1067,6 +1175,8 @@ ul ol {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  margin-bottom: auto;
+  flex-grow: 1;
 }
 
 .project-title {

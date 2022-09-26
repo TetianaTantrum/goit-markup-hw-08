@@ -15,11 +15,12 @@
     margin-right: auto;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 768px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -28,16 +29,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  //   .footer__container {
+  //   display: flex;
+  //   align-items: baseline;
+  //   justify-content: space-between;
+  // }
 }
-
-// .container {
-//   width: 1200px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin: 0 auto;
-// }
-// .footer .container {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
-// }
