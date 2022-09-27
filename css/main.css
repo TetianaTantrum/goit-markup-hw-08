@@ -323,6 +323,7 @@ ul ol {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  overflow: auto;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -675,6 +676,7 @@ ul ol {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
+  overflow: auto;
   opacity: 1;
   transform: scale(1);
   visibility: visible;
@@ -697,8 +699,14 @@ ul ol {
   padding: 40px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  width: 94%;
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+  }
+}
 .close-button {
   position: absolute;
   top: 8px;
@@ -716,6 +724,16 @@ ul ol {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .user-form {
   display: flex;
   flex-direction: column;
@@ -803,7 +821,6 @@ ul ol {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
-  margin-left: 14px;
 }
 .form__check:focus + .form__own-check {
   border-color: var(--accent-color);
@@ -838,10 +855,13 @@ ul ol {
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
 .form__policy-link {
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
 }
 .form__policy-link:hover, .form__policy-link:focus {
@@ -885,7 +905,15 @@ ul ol {
     font-size: 12px;
     line-height: 1.17;
   }
+  .form__own-check {
+    margin-right: 8px;
+    margin-left: 14px;
+  }
   .form__policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .form__policy-link {
     font-size: 14px;
     line-height: 1.71;
   }

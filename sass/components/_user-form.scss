@@ -79,8 +79,7 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
-  margin-left: 14px;
-  .form__check:focus + & {
+    .form__check:focus + & {
     border-color: var(--accent-color);
   }
   .form__check:checked + & {
@@ -112,9 +111,12 @@
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 .form__policy-link {
+  font-size: 12px;
+  line-height: 1.16;
   color: var(--accent-color);
   &:hover,
   &:focus {
@@ -155,7 +157,15 @@
     font-size: 12px;
     line-height: 1.17;
   }
+  .form__own-check {
+    margin-right: 8px;
+    margin-left: 14px;
+  }
   .form__policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .form__policy-link {
     font-size: 14px;
     line-height: 1.71;
   }
