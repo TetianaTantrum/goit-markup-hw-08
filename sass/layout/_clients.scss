@@ -1,6 +1,10 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+.clients__item {
+  flex-basis: calc((100% - 1 * 30px) / 2);
 }
 .clients__link {
   @extend %align;
@@ -19,10 +23,17 @@
     border: 1px solid var(--accent-color);
   }
 }
-
-.clients__item {
-  flex-basis: calc((100% - 5 * 30px) / 6);
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+  }
+}
+
 .clients__icon {
   fill: currentColor;
   cursor: pointer;

@@ -28,6 +28,11 @@
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
 }
+@media screen and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .feature__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
