@@ -79,6 +79,7 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  flex-shrink: 0;
     .form__check:focus + & {
     border-color: var(--accent-color);
   }

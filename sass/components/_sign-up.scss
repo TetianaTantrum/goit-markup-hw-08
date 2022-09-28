@@ -5,8 +5,9 @@
   gap: 20px;
 }
 .sign-up__input {
-  max-width: 450px;
+  width: 100%;
   min-width: 400px;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   background-color: transparent;
@@ -20,7 +21,6 @@
     border-color: var(--accent-color);
   }
 }
-
 .sign-up-policy {
   text-decoration-line: underline;
   color: var(--accent-color);

@@ -40,3 +40,9 @@
     flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

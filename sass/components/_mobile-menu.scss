@@ -1,11 +1,10 @@
 .mobile-menu {
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   font-family: $fontPrimary;
   opacity: 0;
@@ -38,18 +37,20 @@
   .mobile-menu__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    height: 100%;
     justify-content: space-between;
-    gap: 64px;
   }
-  .mobile-menu__thumb {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 302px;
-  }
+  // .mobile-menu__thumb{
+  //   display: flex;
+  //   flex-direction: column;
+  //   height: 100%;
+  //   justify-content: space-between;
+  // }
   .mobile-menu__pages-list {
     display: flex;
     flex-direction: column;
+    margin-bottom: auto;
     gap: 32px;
   }
   .mobile-menu__pages-item {
@@ -92,7 +93,6 @@
     @include font(500, 34px, 40px, start, 0.02em);
     color: var(--accent-color);
   }
-
   .mobile-menu__socials-list {
     display: flex;
     align-items: flex-start;
