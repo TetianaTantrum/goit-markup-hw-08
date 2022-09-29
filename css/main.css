@@ -594,6 +594,10 @@ ul ol {
   background-color: var(--accent-color);
 }
 
+.sign-up-form {
+  width: 100%;
+}
+
 .sign-up__wrapper {
   display: flex;
   flex-direction: column;
@@ -647,6 +651,9 @@ ul ol {
 }
 
 @media screen and (min-width: 768px) {
+  .sign-up-form {
+    width: auto;
+  }
   .sign-up__input {
     width: 450px;
   }
